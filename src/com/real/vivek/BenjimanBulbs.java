@@ -28,6 +28,14 @@ public class BenjimanBulbs {
 
 		//Here we remove the 0th element array
 		System.out.println(Arrays.toString(Arrays.copyOfRange(bulbArr, 1, bulbArr.length)));
+		
+		//Optimized solution: After analysis we see that numbers who are perfect square(1,4,9,16,...) are the only ones being ON
+		//Why perfect square? because number whose factors are even remain off and whose factors are odd remain ON
+		//Any number which is not perfect square has 2n number of factors eg: 17: 1,17; 6: 1,2,3, 3,2,6 because 1*6,2*3,3*2, 3*2,2*3,6*1
+		//Any number which is a perfect square has 2n+1 factors eg: 4: 1,2,4
+		for (int i = 1; i*i <= num; i++) {
+			System.out.println(i*i);
+		}
 	}
 
 }

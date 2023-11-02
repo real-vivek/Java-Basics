@@ -3,6 +3,7 @@ package com.real.vivek.pattern;
 import java.util.Scanner;
 
 /*
+//n is odd
 
   1
  232
@@ -17,6 +18,7 @@ public class Pattern15 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a number:");
 		int num = sc.nextInt();
+		// Solution 1:
 		for (int i = 0; i <= num / 2; i++) {
 			int k = i;
 			for (int j = 0; j < ((num / 2) - i); j++) {
@@ -46,9 +48,7 @@ public class Pattern15 {
 			System.out.println();
 		}
 		
-		
-		
-
+		// Solution 2:
 //		Scanner scn = new Scanner(System.in);
 //		int n = scn.nextInt();
 //		int count = 0;
@@ -84,6 +84,39 @@ public class Pattern15 {
 //			}
 //			System.out.println();
 //		}
-	
+
+		// Solution 3:
+//		int val=0;
+//		for (int i = 0; i <= num / 2; i++) {
+//			for (int j = 0; j < num / 2 - i; j++) {
+//				System.out.print("\t");
+//			}
+//			for (int j = 0; j < 2 * i + 1; j++) {
+//				if (j <= (2 * i + 1) / 2) {
+//					System.out.print(++val + "\t");
+//				} else {
+//					System.out.print(--val + "\t");
+//				}
+//			}
+//			System.out.println();
+//		}
+//
+//		val--;
+//
+//		for (int i = 0; i < num / 2; i++) {
+//			for (int j = 0; j <= i; j++) {
+//				System.out.print("\t");
+//			}
+//			for (int j = 0; j < num / 2 - i; j++) {
+//				System.out.print(val++ + "\t");
+//			}
+//			val--;
+//			for (int j = 0; j < num / 2 - i - 1; j++) {
+//				System.out.print(--val + "\t");
+//			}
+//			val--;
+//			System.out.println();
+//		}
+
 	}
 }
